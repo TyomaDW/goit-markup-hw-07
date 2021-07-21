@@ -7,6 +7,10 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 500ms var(--timing-function);
+
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
 }
 
 .is-hidden {
@@ -31,10 +35,6 @@
   transition: transform 500ms var(--timing-function), visibility 500ms var(--timing-function);
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.5);
-}
-
 .close {
   display: flex;
   align-items: center;
@@ -47,14 +47,14 @@
   border: none;
   cursor: pointer;
   padding: 0;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .close-icon {
   fill: currentColor;
   transition: color var(--effect-duration) var(--timing-function);
-}
-
-.close:hover,
-.close:focus {
-  color: var(--accent-color);
 }

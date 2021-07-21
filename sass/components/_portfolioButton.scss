@@ -2,20 +2,20 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+
+  & .link:hover,
+  & .link:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
 }
 
 .button-align {
   margin-right: 8px;
-}
 
-.button-align:last-of-type {
-  margin-right: 0;
-}
-
-.button-nav .link:hover,
-.button-nav .link:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  &:last-of-type {
+    margin-right: 0;
+  }
 }
 
 .portfolio-button {
@@ -35,14 +35,14 @@
   transition: color var(--effect-duration) var(--timing-function),
     background-color var(--effect-duration) var(--timing-function),
     box-shadow var(--effect-duration) var(--timing-function);
-}
 
-.portfolio-button:hover,
-.portfolio-button:focus,
-.portfolio-button:active {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  box-shadow: var(--button-shadow);
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--button-shadow);
+  }
 }
 
 .button-current {

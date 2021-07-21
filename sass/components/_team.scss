@@ -48,10 +48,10 @@
 .icon-block-container {
   width: 44px;
   height: 44px;
-}
 
-.icon-block-container:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .team-block-icon {
@@ -65,12 +65,12 @@
 
   transition: background-color var(--effect-duration) var(--timing-function),
     color var(--effect-duration) var(--timing-function);
-}
 
-.team-block-icon:hover,
-.team-block-icon:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+  }
 }
 
 .team-icon {

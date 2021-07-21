@@ -43,11 +43,11 @@
 
 .project-bg {
   display: inline-block;
-}
 
-.project-bg:hover,
-.project-bg:focus {
-  box-shadow: var(--portfolio-shadow);
+  &:hover,
+  &:focus {
+    box-shadow: var(--portfolio-shadow);
+  }
 }
 
 .description {

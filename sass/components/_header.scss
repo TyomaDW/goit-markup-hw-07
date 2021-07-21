@@ -11,19 +11,19 @@
 
 .header {
   border: 1px solid #ececec;
-}
 
-.header .container {
-  display: flex;
-  align-items: center;
+  & .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header-item {
   position: relative;
-}
 
-.header-item:not(:last-child) {
-  margin-right: 50px;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .site-nav .link {
@@ -37,24 +37,19 @@
   text-decoration: none;
 
   transition: color var(--effect-duration) var(--timing-function);
-}
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 
-.site-nav .link.current {
-  color: var(--accent-color);
+  &.current {
+    color: var(--accent-color);
+  }
 }
 
 .auth-nav {
   color: var(--lead-text-color);
-}
-
-.auth-list:hover,
-.auth-list:focus {
-  color: var(--accent-color);
 }
 
 .auth-list {
@@ -67,6 +62,11 @@
   padding-bottom: 32px;
 
   transition: color var(--effect-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-icons {
@@ -76,15 +76,15 @@
 
 .current-page {
   color: var(--accent-color);
-}
 
-.current-page::after {
-  position: absolute;
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  bottom: -1px;
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    bottom: -1px;
+  }
 }
