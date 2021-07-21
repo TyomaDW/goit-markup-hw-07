@@ -131,9 +131,11 @@ textarea {
   transition: color var(--effect-duration) var(--timing-function);
 }
 
-.button-modal:hover,
-.button-modal:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  box-shadow: var(--button-shadow);
+.button-modal {
+  &:hover,
+  &:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--button-shadow);
+  }
 }
