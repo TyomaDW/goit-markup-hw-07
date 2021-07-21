@@ -16,7 +16,9 @@
   transition: background-color var(--effect-duration) var(--timing-function);
 }
 
-.button-hero:hover,
-.button-hero:focus {
-  background-color: var(--background-button);
+.button-hero {
+  &:hover,
+  &:focus {
+    background-color: var(--background-button);
+  }
 }
